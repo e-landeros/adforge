@@ -1,6 +1,6 @@
 # Supercharge Your Ad Campaigns with your own Local LLM Ad Generator!
-
-
+[![Adforge](screenshot.png)](sample.mov)
+<!-- ![Adforge in action](screenshot.png) -->
 
 ## Welcome to AdForge - Your Local Language Model (LLM) Ad Generator
 
