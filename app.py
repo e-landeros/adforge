@@ -17,13 +17,13 @@ chain_one = LLMChain(llm=llm, prompt=first_prompt, output_key="headline_idea")
 # Define the second prompt
 second_prompt = ChatPromptTemplate.from_template(
     "Write ad body copy which will influence the user to click or say yes. 30 words or less.\
-        based on this previous headline idea. Return the headline and body copy. headline: {headline_idea}. "
+        based on this previous headline: {headline_idea}. Return the headline and body copy."
 )
 chain_two = LLMChain(llm=llm, prompt=second_prompt, output_key="headline_body")
 
 # Define the third prompt
 third_prompt = ChatPromptTemplate.from_template(
-    " using the {headline_body} generate 3 variations of the headline and body at a 6th grade reading level."
+    " using the {headline_body} generate 3 variations of the headline and body at a 6th grade reading level. which motivate the reader to take action."
 )
 chain_three = LLMChain(llm=llm, prompt=third_prompt, output_key="headlines")
 
@@ -32,7 +32,7 @@ overall_Chain = SequentialChain(
     chains=[chain_one, chain_two, chain_three],
     input_variables=["product_service"],
     output_variables=["headline_idea", "headline_body", "headlines"],
-    verbose=True,
+    verbose=False,
 )
 
 st.title('AdForge: The Ultimate Ad Generator')
