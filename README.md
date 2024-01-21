@@ -4,7 +4,7 @@
 
 ## Welcome to AdForge - Your Local Language Model (LLM) Ad Generator
 
-Are you tired of your paid GPT instance becoming unusable due to persistent unforeseen errors? Say goodbye to those frustrations and welcome the power of Local LLM tasks using Ollama! This project is not just a solution; it's an experience. Now, you can configure your very own local LLM apps and take control of your advertising destiny!
+Are you tired of your paid GPT instance becoming unusable due to persistent unforeseen errors? Say goodbye to those frustrations and welcome the power of Local LLM tasks using AdForge! This project is not just a solution; it's an experience. Now, you can configure your very own local LLM apps and take control of your advertising destiny!
 
 ## Table of Contents
 
@@ -62,7 +62,7 @@ pip install langchain streamlit langchain-community
    - Input the name of your product or service when prompted.
 
 4. **Watch the Magic Happen:**
-   - Ollama will use its advanced algorithms and the PAS framework to generate a headline and body copy that will leave your audience craving more.
+   - Adforge will use its advanced algorithms and the PAS framework to generate a headline and body copy that will leave your audience craving more.
 
 ## Contributing
 
